@@ -43,16 +43,7 @@ export default {
       // },
     },
   },
-  emits: {
-    "toggle-favorite": function(id) {
-      if (id) {
-        return true
-      } else {
-        console.warn("Id is missing")
-        return false
-      }
-    },
-  },
+  emits: ["toggle-favorite"],
   data() {
     return {
       detailsAreVisible: false,
